@@ -1,0 +1,25 @@
+{
+  "name": "pact-prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha tests/**/*.js",
+        "publish:pact": "pact-broker publish ./pacts --consumer-app-version $(git rev-parse --short HEAD) --broker-base-url https://qsnttdata.pactflow.io --broker-token fJ_VDL6aFTxTIyfUG4SV_Q --tag master"
+      
+    
+    
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^10.0.0",
+    "@pact-foundation/pact-node": "^10.0.0",
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^8.0.0",
+    "mocha": "^9.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

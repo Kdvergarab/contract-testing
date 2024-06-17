@@ -1,0 +1,22 @@
+{
+  "name": "provider",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha tests/**/*.js",
+    "start": "node server.js",
+        "verify:provider": "node tests/providerTest.js"
+ 
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@pact-foundation/pact": "^12.5.2",
+    "express": "^4.19.2",
+    "mocha": "^10.4.0"
+  }
+}
